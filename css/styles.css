@@ -75,6 +75,8 @@ p {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  margin-left: auto;
+  margin-right: auto;
 }
 .layout.block {
   text-align: center;
@@ -265,7 +267,6 @@ p {
 
 .container-block__list {
   display: flex;
-  align-items: center;
   margin-right: 0px;
   padding-bottom: 94px;
 }
@@ -277,6 +278,7 @@ p {
 .container-block__item-card:not(:nth-child(4n)) {
   margin-right: 30px;
 }
+
 
 .container-block__item {
   margin-left: auto;
@@ -343,6 +345,7 @@ p {
   text-align: center;
 }
 
+
 .socials {
   text-decoration: none;
   display: flex;
@@ -355,6 +358,12 @@ p {
   color: var(--accent-color);
 }
 
+.socials__item{
+  padding: 0 5px;
+}
+.socilas__icon{
+  
+}
 .footer {
   padding-right: 15px;
   padding-left: 15px;
