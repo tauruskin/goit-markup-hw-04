@@ -12,6 +12,11 @@ html {
   --primary-text-color: #757575;
   --tittle-text-color: #212121;
   --accent-color: #2196f3;
+  --color2: #afb1b8;
+  --color3: #2196f3;
+  --color4: #212121;
+  --color5: #AFB1B8;
+
 }
 
 .header {
@@ -346,7 +351,7 @@ p {
   font-weight: normal;
   font-size: 16px;
   line-height: 1.18;
-  color: #757575;
+  color: var(--primary-text-color);
 }
 
 
@@ -357,26 +362,34 @@ p {
   padding-right: 32px;
   margin-top: 20px;
   justify-content: space-between;
+  
 }
+.socials__icon {
+  fill: var(--color5);
+}
+
 .socials__link{
   display: flex;
   justify-content: center;
   align-items: center;
   width: 44px;
   height: 44px;
+  
 }
-.socials:hover,
-.socials:focus {
-  color: var(--accent-color);
-}
+
 
 .socials__item{
   padding: 0 5px;
   padding-bottom: 25px;
 }
-.socilas__icon{
-  
+
+.socials__link:hover, 
+.socials__link:focus {
+  border-radius: 30px;
+  background-color: #2196F3;
+  color: #ffffff;
 }
+
 .footer {
   padding-right: 15px;
   padding-left: 15px;
