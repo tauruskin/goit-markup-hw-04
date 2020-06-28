@@ -343,16 +343,28 @@ p {
 
 .container-block__list-desc {
   text-align: center;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 1.18;
+  color: #757575;
 }
 
 
 .socials {
   text-decoration: none;
   display: flex;
-  padding-left: 10px;
+  padding-left: 32px;
+  padding-right: 32px;
   margin-top: 20px;
+  justify-content: space-between;
 }
-
+.socials__link{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+}
 .socials:hover,
 .socials:focus {
   color: var(--accent-color);
@@ -360,6 +372,7 @@ p {
 
 .socials__item{
   padding: 0 5px;
+  padding-bottom: 25px;
 }
 .socilas__icon{
   
