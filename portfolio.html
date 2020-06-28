@@ -9,10 +9,10 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700&display=swap"
         rel="stylesheet" />
-    <!-- <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/0.6.0/modern-normalize.min.css" /> -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/0.6.0/modern-normalize.min.css" />
     <link rel="stylesheet" href="./css/styles.css" />
-    <title>Home</title>
+    <title>Портфолио</title>
 </head>
 
 <body>
@@ -209,7 +209,11 @@
             <ul class="footer-list">
                 <li class="footer-list__item">
                     <div class="footer__logo">
-                        <img src="./img/web-studio-white.svg" alt="Web Studio" />
+                        <a href aria-label="Logo" class="navigation__icon-link">
+                            <svg class="navigation__icon">
+                                <use xlink:href="./img/sprite.svg#icon-web-studio-white"></use>
+                            </svg>
+                        </a>
                     </div>
                     <address class="footer-list__text">
                         г. Киев, пр-т Леси Украинки, 26
@@ -221,37 +225,59 @@
                         <span>+38 099 111 11 11</span>
                     </a>
                 </li>
+                <li class="footer-list__item">
+                    <b class="footer-form__text">Присоединяйтесь</b>
+                    <ul class="footer__socials">
+                        <li class="socials__item">
+                            <a href aria-label="Instagram" class="socials__link footer">
+                                <svg class="socials__icon" width="20" height="20">
+                                    <use xlink:href="./img/sprite.svg#icon-instagram"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="socials__item">
+                            <a href aria-label="Instagram" class="socials__link footer">
+                                <svg class="socials__icon" width="20" height="20">
+                                    <use xlink:href="./img/sprite.svg#icon-twitter"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="socials__item">
+                            <a href aria-label="Instagram" class="socials__link footer">
+                                <svg class="socials__icon" width="20" height="20">
+                                    <use xlink:href="./img/sprite.svg#icon-facebook"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="socials__item">
+                            <a href aria-label="Instagram" class="socials__link footer">
+                                <svg class="socials__icon" width="20" height="20">
+                                    <use xlink:href="./img/sprite.svg#icon-linkedin"></use>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="footer-list__item asign">
+                    <b class="mail-send__text-bold">Подпишитесь на рассылку</b>
+                    <ul class="mail-send__item">
+                        <li>
+                            <form action="/" class="mail-send__form">
+                                <input type="email" name="subscribe-email-footer" class="mail-send__input"
+                                    placeholder="email" />
+                            </form>
+                        </li>
+                        <li class="footer__button">
+                            <a href="" class="button__link">
+                                <p class="button__link-text">Подписаться</p>
+                                <svg class="button__link-img">
+                                    <use xlink:href="./img/sprite.svg#icon-icon-send"></use>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
             </ul>
-            <div class="footer-form">
-                <b class="footer-form__text">Присоединяйтесь</b>
-                <ul class="socials">
-                    <li class="socials__item">
-                        1
-                        <!-- <a href="" class="link">Instagram</a> -->
-                    </li>
-                    <li class="socials__item">
-                        2
-                        <!-- <a href="" class="link">Twitter</a> -->
-                    </li>
-                    <li class="socials__item">
-                        3
-                        <!-- <a href="" class="link">Facebook</a> -->
-                    </li>
-                    <li class="socials__item">
-                        4
-                        <!-- <a href="" class="link">Linkedin</a> -->
-                    </li>
-                </ul>
-            </div>
-
-            <div class="mail-send">
-                <b class="mail-send__text-bold">Подпишитесь на рассылку</b>
-                <form action="/" class="mail-send__form"></form>
-                <div class="mail-send__item">
-                    <input type="email" name="subscribe-email-footer" class="mail-send__input" placeholder="email" />
-                    <button class="button primary">Подписаться</button>
-                </div>
-            </div>
         </div>
     </footer>
 </body>
