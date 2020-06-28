@@ -12,6 +12,7 @@ html {
   --primary-text-color: #757575;
   --tittle-text-color: #212121;
   --accent-color: #2196f3;
+  --color1: #ffffff;
   --color2: #afb1b8;
   --color3: #2196f3;
   --color4: #212121;
@@ -336,7 +337,7 @@ p {
 }
 
 .container-block__list {
-  color: var(--tittle-text-color);
+  
   font-weight: 500;
   font-size: 16px;
   line-height: 1.18;
@@ -344,6 +345,7 @@ p {
 
 .container-block__list-tittle {
   text-align: center;
+  color: var(--tittle-text-color);
 }
 
 .container-block__list-desc {
@@ -363,10 +365,9 @@ p {
   margin-top: 20px;
   justify-content: space-between;
   
+  
 }
-.socials__icon {
-  fill: var(--color5);
-}
+
 
 .socials__link{
   display: flex;
@@ -376,7 +377,9 @@ p {
   height: 44px;
   
 }
-
+.socials__icon {
+  fill: var(--color5);
+}
 
 .socials__item{
   padding: 0 5px;
@@ -387,7 +390,7 @@ p {
 .socials__link:focus {
   border-radius: 30px;
   background-color: #2196F3;
-  color: #ffffff;
+  --color5: #ffffff;
 }
 
 .footer {
