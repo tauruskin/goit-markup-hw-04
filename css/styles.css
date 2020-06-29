@@ -479,6 +479,7 @@ p {
   margin-right: -34px;
   margin-left: -34px;
   justify-content: space-between;
+  align-items: baseline;
 }
 .footer-list__item{
   padding-top: 60px;
@@ -498,9 +499,10 @@ p {
   text-decoration: none;
   display: flex;
   margin-top: 20px;
-  justify-content: center;
   margin-left: -5px;
   margin-right: -5px;
+  justify-content: center;
+  
   
 }
 .socials__link.footer {
@@ -553,9 +555,6 @@ p {
   height: 24px;
   fill: var(--color1);
 }
-.mail-send__form {
-  /* color: #FFFFFF; */
-}
 
 .mail-send__input {
   width: 358px;
@@ -593,19 +592,6 @@ p {
   text-transform: uppercase;
   color: #ffffff;
 }
-
-/* .subscribe {
-  width: 200px;
-  height: 50px;
-  background: #2196f3;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
-} */
-
-/* .subscribe__text {
-  color: #ffffff;
-  text-align: center;
-} */
 
 /* Портфолио */
 
@@ -655,6 +641,10 @@ button:focus {
   font-size: 16px;
 }
 
+.button-item.current{
+  background-color: #2196F3;
+  color: #ffffff;
+}
 .button-item:hover,
 .button-item:focus
 .portfolio-tittles {
@@ -667,10 +657,6 @@ button:focus {
   justify-content: center;
   margin-bottom: 50px;
 }
-
-/* .container-list.button {
-    margin-left: 8px;
-} */
 
 .gallery-list {
   display: flex;
