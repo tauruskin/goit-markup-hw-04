@@ -20,16 +20,20 @@
         <div class="container">
             <nav class="navigation">
                 <div class="navigation__logo">
-                    <img src="./img/web-studio.svg" alt="Web Studio" />
+                    <a href aria-label="Logo" class="navigation__icon-link">
+                        <svg class="navigation__icon">
+                            <use xlink:href="./img/sprite.svg#icon-web-studio"></use>
+                        </svg>
+                    </a>
                 </div>
                 <ul class="navigation__list">
                     <li class="navigation__item">
-                        <a href="./index.html" class="navigation__link ">
+                        <a href="./index.html" class="navigation__link current">
                             Студия
                         </a>
                     </li>
                     <li class="navigation__item">
-                        <a href="./portfolio.html" class="navigation__link current">
+                        <a href="./portfolio.html" class="navigation__link">
                             Портфолио
                         </a>
                     </li>
@@ -42,14 +46,18 @@
                 <ul class="contacts-nav">
                     <li class="contacts-nav__item">
                         <a href="mailto:info@devstudio.com" class="contacts-nav__link">
-                            <img src="./img/envelope.svg" alt="" class="contacts-nav__image" />
-                            <span>info@devstudio.com</span>
+                            <svg class="contacts-nav__icon">
+                                <use xlink:href="./img/sprite.svg#icon-envelope"></use>
+                            </svg>
+                            <span class="contacts-nav__text">info@devstudio.com</span>
                         </a>
                     </li>
                     <li class="contacts-nav__item">
                         <a href="tel:380961111111" class="contacts-nav__link">
-                            <img src="./img/phone.svg" alt="" class="contacts-nav__image" />
-                            <span>+38 096 111 11 11</span>
+                            <svg class="contacts-nav__icon">
+                                <use xlink:href="./img/sprite.svg#icon-phone"></use>
+                            </svg>
+                            <span class="contacts-nav__text">+38 096 111 11 11</span>
                         </a>
                     </li>
                 </ul>
@@ -63,31 +71,20 @@
                 <!-- <h1 class="portfolio-tittles">Фильтры</h1> -->
                 <ul class="container-list">
                     <li class="button-items">
-                        <button class="button-item">
-                            <span class="button-item__text"> Все
-                            </span>
-                        </button>
+                        <a href="" class="button-item">Все</a>
                     </li>
                     <li class="button-items">
-                        <button class="button-item">
-                            <span class="button-item__text"> Веб-сайты
-                            </span>
-                        </button>
+                        <a href="" class="button-item">Веб-сайты</a>
+                    </li>
                     <li class="button-items">
-                        <button class="button-item">
-                            <span class="button-item__text"> Приложения
-                            </span>
-                        </button>
+                        <a href="" class="button-item">Приложения</a>
+                    </li>
                     <li class="button-items">
-                        <button class="button-item">
-                            <span class="button-item__text"> Дизайн
-                            </span>
-                        </button>
+                        <a href="" class="button-item">Дизайн</a>
+                    </li>
                     <li class="button-items">
-                        <button class="button-item">
-                            <span class="button-item__text"> Маркетинг
-                            </span>
-                        </button>
+                        <a href="" class="button-item">Маркетинг</a>
+                    </li>
                 </ul>
             </div>
 
@@ -102,8 +99,10 @@
                             Компании используют эту платформу для цифрового шпионажа и атак на защищённые сервера
                             конкурентов. -->
                                 <img src="./img/portfolio/technokriak.jpg" alt="Технокряк" width="370" height="294">
-                                <h2 class="gallery-tittle">Технокряк</h2>
-                                <p class="gallery-desc">Веб-сайт</p>
+                                <div class="element__sect">
+                                    <h2 class="element__tittle">Технокряк</h2>
+                                    <p class="element__desc">Веб-сайт</p>
+                                </div>
                             </a>
                         </li>
                         <li class="element">
@@ -113,9 +112,10 @@
                             конкурентов. -->
                                 <img src="./img/portfolio/poster-new-orlean.jpg" alt="Два баскетболиста с мячом"
                                     width="370" height="294">
-                                <h2 class="gallery-tittle">Постер New Orlean vs Golden Star</h2>
-
-                                <p class="gallery-desc">Дизайн</p>
+                                <div class="element__sect">
+                                    <h2 class="element__tittle">Постер New Orlean vs Golden Star</h2>
+                                    <p class="element__desc">Дизайн</p>
+                                </div>
                             </a>
                         </li>
                         <li class="element">
@@ -125,9 +125,10 @@
                             конкурентов. -->
                                 <img src="./img/portfolio/restaurant-seafood.jpg" alt="Рыба с логотипом" width="370"
                                     height="294">
-                                <h2 class="gallery-tittle">Ресторан Seafood</h2>
-
-                                <p class="gallery-desc">Приложение</p>
+                                <div class="element__sect">
+                                    <h2 class="element__tittle">Ресторан Seafood</h2>
+                                    <p class="element__desc">Приложение</p>
+                                </div>
                             </a>
                         </li>
                         <li class="element">
@@ -136,9 +137,10 @@
                             Компании используют эту платформу для цифрового шпионажа и атак на защищённые сервера
                             конкурентов. -->
                                 <img src="./img/portfolio/proekt-prime.jpg" alt="Наушники" width="370" height="294">
-                                <h2 class="gallery-tittle">Проект Prime</h2>
-
-                                <p class="gallery-desc">Маркетинг</p>
+                                <div class="element__sect">
+                                    <h2 class="element__tittle">Проект Prime</h2>
+                                    <p class="element__desc">Маркетинг</p>
+                                </div>
                             </a>
                         </li>
                         <li class="element">
@@ -147,9 +149,10 @@
                             Компании используют эту платформу для цифрового шпионажа и атак на защищённые сервера
                             конкурентов. -->
                                 <img src="./img/portfolio/proekt-boxes.jpg" alt="Две коробки" width="370" height="294">
-                                <h2 class="gallery-tittle">Проект Boxes</h2>
-
-                                <p class="gallery-desc">Приложение</p>
+                                <div class="element__sect">
+                                    <h2 class="element__tittle">Проект Boxes</h2>
+                                    <p class="element__desc">Приложение</p>
+                                </div>
                             </a>
                         </li>
                         <li class="element">
@@ -159,9 +162,10 @@
                             конкурентов. -->
                                 <img src="./img/portfolio/inspiration-desktop.jpg" alt="Монитор" width="370"
                                     height="294">
-                                <h2 class="gallery-tittle">Inspiration has no Borders</h2>
-
-                                <p class="gallery-desc">Веб-сайт</p>
+                                <div class="element__sect">
+                                    <h2 class="element__tittle">Inspiration has no Borders</h2>
+                                    <p class="element__desc">Веб-сайт</p>
+                                </div>
                             </a>
                         </li>
                         <li class="element">
@@ -170,9 +174,10 @@
                             Компании используют эту платформу для цифрового шпионажа и атак на защищённые сервера
                             конкурентов. -->
                                 <img src="./img/portfolio/book.jpg" alt="Открытая книга" width="370" height="294">
-                                <h2 class="gallery-tittle">Издание Limited Edition</h2>
-
-                                <p class="gallery-desc">Дизайн</p>
+                                <div class="element__sect">
+                                    <h2 class="element__tittle">Издание Limited Edition</h2>
+                                    <p class="element__desc">Дизайн</p>
+                                </div>
                             </a>
                         </li>
                         <li class="element">
@@ -181,9 +186,10 @@
                             Компании используют эту платформу для цифрового шпионажа и атак на защищённые сервера
                             конкурентов. -->
                                 <img src="./img/portfolio/proekt-lab.jpg" alt="Ярлык" width="370" height="294">
-                                <h2 class="gallery-tittle">Проект LAB</h2>
-
-                                <p class="gallery-desc">Маркетинг</p>
+                                <div class="element__sect">
+                                    <h2 class="element__tittle">Проект LAB</h2>
+                                    <p class="element__desc">Маркетинг</p>
+                                </div>
                             </a>
                         </li>
                         <li class="element">
@@ -193,9 +199,10 @@
                             конкурентов. -->
                                 <img src="./img/portfolio/growing-business.jpg" alt="Открытый Ноутбук" width="370"
                                     height="294">
-                                <h2 class="gallery-tittle">Growing Business</h2>
-
-                                <p class="gallery-desc">Приложение</p>
+                                <div class="element__sect">
+                                    <h2 class="element__tittle">Growing Business</h2>
+                                    <p class="element__desc">Приложение</p>
+                                </div>
                             </a>
                         </li>
                     </ul>
